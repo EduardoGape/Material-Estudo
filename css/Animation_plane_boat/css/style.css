@@ -1,0 +1,71 @@
+.scene {
+    width: 280px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.scene img {
+    position: absolute;
+}
+
+.city {
+    bottom: -3px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.plane {
+    top: 50px;
+    left: -50px;
+    width: 45px;
+    animation: plane-move 15s linear forwards;
+}
+
+.cloud {
+    animation: clouds-move 22s linear forwards;
+}
+
+.cloud-1 {
+    width: 70px;
+    top: 0;
+    left: 30px;
+}
+
+.cloud-2 {
+    width: 35px;
+    top: 20px;
+    left: 125px;
+}
+
+.cloud-3 {
+    width: 45px;
+    top: 55px;
+    left: 145px;
+}
+
+.boat {
+    width: 30%;
+    bottom: 0;
+    right: -50px;
+    animation: boat-move 20s linear forwards;
+}
+
+@keyframes plane-move {
+    to {
+        transform: translate(300px, -100px);
+    }
+}
+
+@keyframes clouds-move {
+    to {
+        transform: translateX(-25px);
+    }
+}
+
+@keyframes boat-move {
+    to {
+        transform: translateX(-300px);
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "require": {
+        "paulao-dev/router-khan": "*"
+    },
+    "autoload": {
+    	"psr-4": {
+    		"Src\\": "src/" 
+    	}
+    }
+}

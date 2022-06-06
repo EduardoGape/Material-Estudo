@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Clone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Start to Header -->
+    <div class="header">
+        <!-- Header Left -->
+        <div class="header__left">
+            <span class="material-icons"> menu </span>
+            <img src="https://i.pinimg.com/originals/ae/47/fa/ae47fa9a8fd263aa364018517020552d.png" alt="Logo Gmail">
+        </div>
+        <!-- Header Middle -->
+        <div class="header__middle">
+            <span class="material-icons"> search </span>
+            <input type="text" placeholder="Search email">
+            <span class="material-icons"> arrow_drop_down </span>
+        </div>
+
+        <!-- Header right -->
+        <div class="header__right">
+            <span class="material-icons"> apps </span>
+            <span class="material-icons"> notifications </span>
+            <span class="material-icons"> account_circle </span>
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Start body -->
+    <div class="main__body">
+        <!-- Start Sidebar -->
+        <div class="sidebar">
+            <button class="sidebar__compose">
+                <span class="material-icons"> add </span> Compose
+            </button>
+
+            <div class="sidebarOption">
+                <span class="material-icons"> inbox </span>
+                <h3>Index</h3>
+            </div>
+
+            <div class="sidebarOption">
+                <span class="material-icons"> star </span>
+                <h3>Favorite</h3>
+            </div>
+
+            <div class="sidebarOption">
+                <span class="material-icons"> access_time </span>
+                <h3>Snoozed</h3>
+            </div>
+
+            <div class="sidebarOption ">
+                <span class="material-icons"> label_important </span>
+                <h3>Important</h3>
+            </div>
+
+            <div class="sidebarOption ">
+                <span class="material-icons"> near_me </span>
+                <h3>Sent</h3>
+            </div>
+
+            <div class="sidebarOption ">
+                <span class="material-icons"> note </span>
+                <h3>Drafts</h3>
+            </div>
+
+            <div class="sidebarOption ">
+                <span class="material-icons"> expand_more </span>
+                <h3>More</h3>
+            </div>
+
+            <div class="sidebar__footer">
+                <div class="sidebar__footerIcons">
+                    <span class="material-icons"> person </span>
+                    <span class="material-icons"> duo </span>
+                    <span class="material-icons"> phone</span>
+                </div>
+            </div>
+        </div>
+        <!-- End Sidebar-->
+
+        <!--Start Email List-->
+        <div class="emailList">
+            <!-- Start Email List Settings -->
+            <div class="emailList_settings">
+                <!-- Settings Left -->
+                <div class="emailList__settingsLeft">
+                    <input type="checkbox">
+                    <span class="material-icons"> arrow_drop_down </span>
+                    <span class="material-icons"> redo </span>
+                    <span class="material-icons"> more_vert </span>
+                </div>
+                <!-- Setting Right -->
+                <div class="emailList__settingsRight">
+                    <span class="material-icons"> chevron_left </span>
+                    <span class="material-icons"> chevron_right </span>
+                    <span class="material-icons"> keyboard_hide </span>
+                    <span class="material-icons"> settings </span>
+                </div>
+            </div>
+            <!-- End Settings -->
+            <!-- Start  Section -->
+            <div class="emailList__sections">
+                <div class="section section__selected">
+                    <span class="material-icons"> index </span>
+                    <h4>Primary</h4>
+                </div>
+
+                <div class="section">
+                    <span class="material-icons"> people </span>
+                    <h4> Socials </h4>
+                </div>
+
+                <div class="section">
+                    <span class="material-icons"> local_offer </span>
+                    <h4> Promotions </h4>
+                </div>
+            </div>
+            <!-- End Sections -->
+
+            <!-- Start List to emails-->
+            <div class="emailList__list">
+                <div class="emailRow">
+                    <div class="emailRow__options">
+                        <input type="checkbox">
+                        <span class="material-icons"> star_border </span>
+                        <span class="material-icons"> label_important </span>
+                    </div>
+                    <!-- Close Options -->
+
+                    <h3 class="emailRow__title">Eduardo Leite</h3>
+                    <!-- Start Message-->
+                    <div class="emailRow__message">
+                        <h4>Clone Gmail!!
+                            <span class="emailRow__description">Clone do gmail feito em html/css/javascript</span>
+                        </h4>
+                    </div>
+                    <!-- End Message-->
+
+                    <!--Start time-->
+                    <p>12pm</p>
+
+                </div>
+                <!--End email row-->
+            </div>
+            <!-- End email list list -->
+        </div>
+        <!-- End email list -->
+    </div>
+    <!-- End main body -->
+
+</body>
+
+</html>

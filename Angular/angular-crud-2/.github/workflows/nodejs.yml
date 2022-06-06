@@ -1,0 +1,48 @@
+name: Angular CRUD CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version: [14, 16]
+        app:
+          - demo
+          - demo-bootstrap
+          - demo-material
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Install latest Chrome
+      run: |
+        sudo apt update
+        sudo apt --only-upgrade install google-chrome-stable
+        google-chrome --version
+    - name: npm install, build, and test
+      run: |
+        npm ci
+        npm run build --if-present
+        npm test
+        npm run coverage
+      working-directory: ./angular-crud
+    - name: package angular-crud
+      run: npm pack
+      working-directory: ./angular-crud
+    - name: generate CRUD and run tests
+      run: |
+        npm i -g @angular/cli
+        npm i
+        npm i --no-save ../angular-crud/*.tgz
+        mkdir -p src/app/hotel
+        mv model.json src/app/hotel/.
+        ng g angular-crud:crud-module hotel
+        xvfb-run npm test -- --watch=false
+      working-directory: ./${{ matrix.app }}
+      env:
+        CI: true

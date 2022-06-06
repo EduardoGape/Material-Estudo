@@ -1,0 +1,43 @@
+.button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 24px;
+    color: red;
+    border: 1px solid red;
+    overflow: hidden;
+    position: relative;
+    transition: color .5s .25s;
+}
+
+.button::before,
+.button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 58%;
+    height: 100%;
+    background-color: black;
+    z-index: -1;
+    transform: scaleX(0);
+    transition: transform .5s cubic-bezier(.785, .135, .15, .86);
+}
+
+.button::before {
+    left: 0;
+    transform-origin: left;
+}
+
+.button::after {
+    right: 0;
+    transform-origin: right;
+}
+
+.button:hover::before,
+.button:hover::after {
+    transform: scaleX(1);
+}
+
+.button:hover {
+    color: yellow;
+    transition-delay: .5s;
+}

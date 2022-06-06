@@ -1,0 +1,194 @@
+body {
+margin: 0;
+padding: 0;
+background-color: #E9E9E9;
+}
+
+.page-title {
+text-align: center;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.main {
+width: 900px;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}
+
+.main-connect {
+width: 350px;
+margin-left: auto;
+margin-right: auto;
+padding: 10px;
+}
+
+.form-control {
+width: 100%;
+}
+
+#connect-btn {
+width: 100%;
+}
+
+.caption {
+text-align: center;
+}
+
+#logo {
+margin-bottom: 5px;
+}
+
+/* PAGE INSCRIPTION */
+
+.main-subscribe {
+width: 400px;
+margin-left: auto;
+margin-right: auto;
+padding: 10px;
+}
+
+#subscribe-btn {
+width: 100%;
+}
+
+h2 {
+text-align: center;
+}
+
+/* MEMBRES */
+
+.main-member {
+margin-top: 80px;
+padding: 10px;
+}
+
+.chat {
+height: 350px;
+overflow-y: scroll;
+}
+
+.column-chat {
+background-color: #FFF;
+border: 1px solid black;
+border-radius: 10px;
+margin-bottom: 50px;
+margin-left: 10px;
+}
+
+.logo-member {
+width: 150px;
+height: auto;
+position: absolute;
+top: 10px;
+left: 75px;
+z-index: 1;
+}
+
+.main-chat {
+background-color: #FFF;
+width: 900px;
+}
+
+#bubble {
+margin-bottom: 20px;
+}
+
+#btn-send {
+width: 100%;
+margin-top: 10px;
+}
+
+/* PROFIL */
+
+.column-profil {
+padding-top: 40px;
+padding-bottom: 10px;
+background-color: #FFF;
+border: 1px solid black;
+border-radius: 10px;
+text-align: center;
+}
+
+.infos-profil {
+text-align: left;
+list-style: none;
+}
+
+#profil-picture {
+width: 200px;
+height: 200px;
+border: 1px solid black;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 10px;
+}
+
+#btn-disconnect {
+color: #FFF;
+}
+
+.container-settings {
+text-align: left;
+margin-top: 20px;
+width: 260px;
+}
+
+.settings {
+width:100%;
+margin: 5px 0;
+}
+
+/* WHO'S ONLINE */
+
+.container-online-users {
+width: 250px;
+height: 400px;
+position: fixed;
+bottom: 0;
+right: 50px;
+background-color: #E9E9E9;
+border: 1px solid black;
+border-radius: 10px 10px 0 0;
+margin-bottom: -369px;
+}
+
+.title-users {
+background-color: #85C1E9;
+width: 100%;
+height: 30px;
+border-radius: 10px 10px 0 0;
+border-bottom: 1px solid black;
+text-align: center;
+padding-top: 5px;
+cursor: pointer;
+}
+
+.container-online-users-active {
+width: 250px;
+height: 400px;
+position: fixed;
+bottom: 0;
+right: 50px;
+background-color: #E9E9E9;
+border: 1px solid black;
+border-radius: 10px 10px 0 0;
+margin-bottom: -369px;
+}
+
+
+/*  VUE MOBILE */
+
+@media screen and (max-width: 480px) {
+
+.logo-member {
+width: 100px;
+height: auto;
+position: absolute;
+top: 35px;
+left: -5px;
+z-index: 1;
+}
+
+}

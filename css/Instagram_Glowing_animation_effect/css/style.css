@@ -1,0 +1,21 @@
+.icon i {
+    font-size: 34px;
+    text-shadow: 0 0 15px;
+    animation: animate 1s infinite linear;
+}
+
+@keyframes animate {
+    0%,
+    100% {
+        color: deeppink;
+    }
+    25% {
+        color: deepskyblue;
+    }
+    50% {
+        color: lawngreen;
+    }
+    75% {
+        color: yellow;
+    }
+}

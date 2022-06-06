@@ -1,0 +1,46 @@
+.scene {
+    width: 430px;
+    height: 400px;
+    background: url('./image/background.png') 0 90% no-repeat;
+    border: 1px solid red;
+    background-size: cover;
+    background-size: 500% 400%;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: background-position 15s linear;
+}
+
+.scene:hover {
+    background-position: 150% 90%;
+}
+
+.mario {
+    width: 158px;
+    height: 200px;
+    background: url('./image/mario.png') no-repeat;
+    transform: translate(10px, 85px);
+    animation: run .9s infinite;
+}
+
+input[type='checkbox'] {
+    display: none;
+}
+
+input:checked+.mario {
+    animation-timing-function: step-end;
+}
+
+@keyframes run {
+    25% {
+        background-position: -85px 0;
+    }
+    50% {
+        width: 145px;
+        background-position: -150px 0;
+    }
+    75% {
+        width: 155px;
+        background-position: -197px 0;
+    }
+}
